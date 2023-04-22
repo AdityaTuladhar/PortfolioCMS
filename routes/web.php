@@ -18,8 +18,8 @@ use App\Footer;
 */
 
 Route::get('/', function () {
-    return view('layouts/portfolio', ['sliders'=>SliderInfo::all(),'details'=>Details::findOrFail(1), 'skills'=>Skills::all(), 'experiences'=>Experience::orderBy('date','desc')->get(), 'footer'=>Footer::findOrFail(1)]);
-});
+    return view('layouts.portfolio', ['sliders'=>SliderInfo::all(),'details'=>Details::findOrFail(1), 'skills'=>Skills::all(), 'experiences'=>Experience::orderBy('date','desc')->get(), 'footer'=>Footer::findOrFail(1)]);
+})->name('layouts.portfolio');
 
 // Route::get('/dashboard/experience', function () {
 //     return view('dashboard.experience');

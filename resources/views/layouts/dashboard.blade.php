@@ -57,7 +57,7 @@
             <span class="nav_name">Footer</span>
           </a>
         </div>
-      </div> <a href="#" class="nav_link"> <i
+      </div> <a href="{{ route('layouts.portfolio') }}" class="nav_link"> <i
           class='bx bx-log-out nav_icon'></i> <span class="nav_name">Back to
           Portfolio</span> </a>
     </nav>
