@@ -12,5 +12,11 @@
 - Run `php artisan storage:link`
 - Run `php artisan serve`
 
-For home page go to localhost:8000
-For CMS dashboard go to localhost:8000/dashboard/details
+-For home page go to localhost:8000
+-For CMS dashboard go to localhost:8000/dashboard/details
+
+-Main Home Page
+![photo1](https://user-images.githubusercontent.com/45659367/233794697-7dc56335-0499-4a6f-bdd1-2a0f5f75ed83.jpg)
+
+-CMS Dashboard Page
+![image2](https://user-images.githubusercontent.com/45659367/233794753-aee97db8-8350-4168-b9de-eca50129efa3.PNG)
