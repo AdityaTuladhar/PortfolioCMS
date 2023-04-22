@@ -11,3 +11,6 @@
 - Run `php artisan db:seed --class=DetailsSeeder` to run seeders
 - Run `php artisan storage:link`
 - Run `php artisan serve`
+
+For home page go to localhost:8000
+For CMS dashboard go to localhost:8000/dashboard/details
