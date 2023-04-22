@@ -31,7 +31,13 @@
                       <div class="col-2">
                         <div class="form-group">
                           <img
-                            src="{{ asset('storage/images/' . $slider['source']) }}"
+                            src="
+                            @if(explode(':',$slider['source'])[0]=='https')				
+                              {{ $slider['source'] }}
+                            @else
+                              {{ asset('storage/images/'.$slider['source']) }}
+                            @endif
+                            "
                             style="height: 45px;width:45px; ">
                         </div>
                       </div>

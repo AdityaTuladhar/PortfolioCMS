@@ -12,11 +12,18 @@
                 @if ($loop->index == 0)
                     active
                 @endif ">
-            <img src="{{ asset('storage/images/'.$slider['source']) }}" class="carausel-image d-block 
-                        @if ($loop->index%2 == 1)
-                            carausel-image-right
-                        @endif
-                        w-100" alt="Slider Image">
+            <img src="
+                    @if(explode(':',$slider['source'])[0]=='https')				
+                        {{ $slider['source'] }}
+                    @else
+                        {{ asset('storage/images/'.$slider['source']) }}
+                    @endif
+                    "
+                class="carausel-image d-block 
+                    @if ($loop->index%2 == 1)
+                        carausel-image-right
+                    @endif
+                    w-100" alt="Slider Image">
             <div class="carausel-great-title 
                     @if ($loop->index % 2 ==0)
                         carausel-great-title-right

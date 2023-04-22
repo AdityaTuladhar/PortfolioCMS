@@ -26,7 +26,7 @@
                       <div class="col-6">
                         <div class="form-group">
                           <input id="form_name"
-                            @if (@isset($skill['skill'])) value="{{ $skill['skill'] }}" @endif
+                            @if (@isset($skill['languages'])) value="{{ $skill['languages'] }}" @endif
                             type="text" name="skill-{{ $skill['id'] }}"
                             class="form-control"
                             placeholder="Please enter your skill *"
