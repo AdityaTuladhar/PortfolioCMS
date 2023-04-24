@@ -23,7 +23,7 @@
                   <div class="controls">
                     <div class="row mb-2">
                       <div class="col-6">Experience</div>
-                      <div class="col-4">Rating</div>
+                      <div class="col-4">Date</div>
                     </div>
                     @foreach ($experiences as $experience)
                       <div class="row">

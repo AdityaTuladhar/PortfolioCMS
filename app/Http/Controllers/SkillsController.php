@@ -76,13 +76,13 @@ class SkillsController extends Controller
             $temp_arr = explode('-',$input_name);
             if(count($temp_arr)==2 && $temp_arr[0]=='skill'){
                 $skills = Skills::findOrFail($temp_arr[1]);
-                $skills->skill = $request->input('skill-'.$temp_arr[1]);
+                $skills->languages = $request->input('skill-'.$temp_arr[1]);
                 $skills->rating = $request->input('rating-'.$temp_arr[1]);
                 $skills->save();
             }
             elseif (count($temp_arr)==3 && $temp_arr[0]=='skill') {
                 $new_skill = new Skills();
-                $new_skill->skill = $request->input('skill-new-'.$temp_arr[2]);
+                $new_skill->languages = $request->input('skill-new-'.$temp_arr[2]);
                 $new_skill->rating = $request->input('rating-new-'.$temp_arr[2]);
                 $new_skill->save();
             }
